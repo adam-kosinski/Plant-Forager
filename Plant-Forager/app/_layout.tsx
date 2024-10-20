@@ -1,6 +1,10 @@
-// App.tsx
-import { Slot } from 'expo-router';
-
-export default function App() {
-  return <Slot />;
-}
+import { Stack } from 'expo-router';
+function RootLayoutNav() {
+  
+    return (
+        <Stack>
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+          <Stack.Screen name="PlantInfoModal" options={{ presentation: 'modal' }} />
+        </Stack>
+    );
+  }

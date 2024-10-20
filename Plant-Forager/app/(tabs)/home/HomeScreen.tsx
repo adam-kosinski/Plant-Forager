@@ -1,24 +1,13 @@
-// app/(tabs)/home/HomeScreen.tsx
-import { View, Text, StyleSheet } from 'react-native';
+// app/home/HomeScreen.tsx
+import { View, Text, Button } from 'react-native';
+import { useRouter } from 'expo-router';
 
 export default function HomeScreen() {
+  const router = useRouter();
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Welcome to the Home Screen!</Text>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Welcome to the Home Screen</Text>
+      <Button title="Go to Details" onPress={() => router.push('/PlantDetailWithMap')} />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f0f0f0',
-  },
-  text: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#333',
-  },
-});

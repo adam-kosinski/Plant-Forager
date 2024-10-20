@@ -36,6 +36,6 @@ export default function TabLayout() {
   );
 }
 
-export const unstable_settings = {
-    initialRouteName: '(tabs)',
-  };
+// export const unstable_settings = {
+//     initialRouteName: '(tabs)',
+//   };

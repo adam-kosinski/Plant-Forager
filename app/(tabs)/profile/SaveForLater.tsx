@@ -1,13 +1,10 @@
 // app/(tabs)/profile/ProfileScreen.tsx
 import { View, Text, StyleSheet } from 'react-native';
-import { Link, useRouter } from 'expo-router';
 
 export default function ProfileScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>This is the Profile Screen</Text>
-      <Link href="./profile/Favorites"> Go to Favorites </Link>
-      <Link href="./SaveForLater"> Go to Save for Later </Link>
+      <Text style={styles.text}>This is the Save for Later Screen</Text>
     </View>
   );
 }

@@ -1,7 +1,7 @@
 // app/(tabs)/profile/ProfileScreen.tsx
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from "react-native";
 
-export default function ProfileScreen() {
+export default function PlantLocation() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>This is the Plant Location Screen</Text>
@@ -12,13 +12,13 @@ export default function ProfileScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f0f0f0',
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#f0f0f0",
   },
   text: {
     fontSize: 24,
-    fontWeight: 'bold',
-    color: '#333',
+    fontWeight: "bold",
+    color: "#333",
   },
 });
